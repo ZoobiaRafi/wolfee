@@ -1,0 +1,761 @@
+/*------------------ Colors:Start ------------------------*/
+:root {
+  /*------------------ Primary Colors ------------------------*/
+  --primary: #023143 !important;
+  --secondary: #567682!important;
+  --black: #000000 !important;
+  --white: #ffffff !important;
+  --gold: #E9BA3F !important;
+  --headerBlack: #292929 !important;
+  --headerGray: #6e6d6d !important;
+  --headerLightGray: #e3e3e3 !important;
+  --primaryHeading: #0B4183 !important;
+  /*------------------ Secondary Colors ------------------------*/
+  /*------------------ Default Colors ------------------------*/
+  --darkGrey: #151515 !important;
+  --lightGrey: #f2f4f5 !important;
+  --lightGreyBakground: #f8f8f8 !important;
+}
+
+/*------------------ Colors:End ------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  transition: all ease 0.5s;
+}
+
+header {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.3882352941);
+}
+header .logo {
+  height: 70px;
+  width: 80px;
+  padding: 5px;
+}
+header .logo img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header h1 {
+  color: var(--primary);
+  font-family: "Roboto";
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 991.98px) {
+  header h1 {
+    font-size: 25px;
+  }
+}
+header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1199.98px) {
+  header .nav {
+    justify-content: start;
+  }
+}
+header .nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  list-style: none;
+}
+header .nav ul li.menu-item:hover {
+  border-bottom: 2px solid var(--gold);
+  background-color: rgba(243, 241, 241, 0.3411764706);
+}
+header .nav ul li {
+  float: left;
+  font-family: "Roboto";
+  border-bottom: 2px solid transparent;
+  padding: 15px;
+}
+@media (max-width: 991.98px) {
+  header .nav ul li {
+    padding: 10px !important;
+  }
+}
+header .nav ul li a {
+  color: var(--primary);
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+}
+@media (max-width: 991.98px) {
+  header .nav ul li a {
+    font-size: 15px !important;
+  }
+}
+header .nav ul li .btn-contact {
+  color: var(--white);
+  background-color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+  padding: 5px 25px;
+  font-size: 20px;
+  font-family: "Roboto";
+}
+header .nav ul li .btn-contact:hover {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+.banner {
+  padding: 0;
+  margin: 0;
+  background-image: url(/assets/images/banner-bg.png);
+  background-position: 100% 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.banner .background .text {
+  padding: 100px 0 100px;
+}
+.banner .background .text .heading-sm {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #1E2E3E;
+  font-size: 50px;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+.banner .background .text .heading-lg {
+  margin: 0;
+  padding: 0;
+  color: var(--primary);
+  font-size: 100px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1;
+}
+.banner .background .text .content {
+  padding-top: 1rem;
+  font-size: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #1E2E3E;
+  line-height: 1;
+}
+.banner .background .text .help {
+  padding-top: 40px;
+}
+.banner .background .text .help .help-btn {
+  color: var(--white);
+  background-color: var(--primary);
+  border: 3px solid var(--primary);
+  border-radius: 4px;
+  padding: 5px 25px;
+  font-size: 30px;
+  font-family: "Roboto";
+}
+.banner .background .text .help .help-btn:hover {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+.banner-2 {
+  padding: 0;
+  margin: 0;
+  background-image: url(/assets/images/banner2-bg.png);
+  background-position: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner-2 .text {
+  padding: 82px 0 86px;
+}
+.banner-2 .text p {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  color: var(--secondary);
+  font-size: 90px;
+  line-height: 1;
+}
+
+.services {
+  background-image: url(/assets/images/services-bg.webp);
+  background-position: 0% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.services .head {
+  padding-top: 100px;
+}
+.services .head .heading {
+  color: var(--white);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 80px;
+  font-weight: bolder;
+  line-height: 1.25;
+  padding: 0;
+  margin: 0;
+}
+.services .head .heading-hr {
+  border: 2px solid var(--gold);
+  border-radius: 5px;
+  color: var(--gold);
+  width: 250px;
+  opacity: 1;
+  padding: 0;
+  margin: 0;
+}
+.services .row-cards {
+  padding-top: 3rem;
+}
+.services .row-cards .card .image {
+  height: 550px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.services .row-cards .card .image img {
+  max-width: 100%;
+  transition: all 0.5s ease-in;
+  transform: scale(1.2);
+}
+.services .row-cards .card .info {
+  display: none;
+  position: absolute;
+  top: 350px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(2, 49, 67, 0.6666666667);
+  border-radius: 0 0 5px 5px;
+  transition: all 0.5s ease-in;
+}
+.services .row-cards .card .info .text {
+  font-size: 50px;
+  color: var(--white);
+  font-family: "Roboto";
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+}
+.services .row-cards .card .info .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .row-cards .card .info .button .btn-help {
+  font-family: "Roboto";
+  font-weight: 600;
+  background-color: transparent;
+  border: 2px solid var(--white);
+  color: var(--white);
+  padding: 9px 30px;
+  font-size: 25px;
+}
+.services .row-cards .card .info .button .btn-help:hover {
+  color: var(--primary);
+  background-color: var(--white);
+}
+.services .row-cards .card:hover .image img {
+  transition: all 0.5s ease-out;
+  transform: scale(1);
+}
+.services .row-cards .card:hover .info {
+  display: block;
+  transition: all 0.5s ease-out;
+}
+.services .row-cards .card-lg .image {
+  height: 425px;
+}
+.services .row-cards .card-lg .info {
+  top: 250px;
+  padding: 1rem;
+}
+
+.about-wolfee {
+  background-image: url(/assets/images/about-wolfee-co.png);
+  background-position: 0% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-wolfee .head {
+  padding-top: 100px;
+}
+.about-wolfee .head .heading {
+  color: var(--primary);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 80px;
+  line-height: 1.25;
+  padding: 0;
+  font-weight: bolder;
+  margin: 0;
+}
+.about-wolfee .head .heading-hr {
+  border: 2px solid var(--gold);
+  border-radius: 5px;
+  color: var(--gold);
+  width: 250px;
+  opacity: 1;
+  padding: 0;
+  margin: 0;
+}
+.about-wolfee .row-2 {
+  padding-right: 100px;
+  padding-bottom: 100px;
+}
+.about-wolfee .row-2 .text {
+  padding-top: 3rem;
+  padding-right: 1rem;
+  margin: 0;
+  font-size: 32px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #1E2E3E;
+  line-height: 1;
+}
+.about-wolfee .row-2 .image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.about-wolfee .row-2 .image img {
+  height: 100%;
+  width: 100%;
+}
+.about-wolfee .row-2 .info {
+  position: absolute;
+  top: 315px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(2, 49, 67, 0.6666666667);
+  border-radius: 0 0 5px 5px;
+  transition: all 0.5s ease-in;
+  padding: 10px 75px 5px 75px;
+}
+.about-wolfee .row-2 .info .text-sm {
+  color: var(--white);
+  text-align: right;
+  font-size: 30px;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+.about-wolfee .row-2 .info .text-lg {
+  color: var(--white);
+  text-align: center;
+  font-size: 50px;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+.banner-blue-3 {
+  padding: 0;
+  margin: 0;
+  background-image: url(/assets/images/banner-blue-3.png);
+  background-position: 0% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner-blue-3 .text {
+  padding: 82px 0 86px;
+}
+.banner-blue-3 .text p {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  text-transform: uppercase;
+  color: var(--white);
+  font-size: 90px;
+  line-height: 1;
+}
+
+.attiq-malik {
+  padding: 0;
+  margin: 0;
+  background-image: url(/assets/images/attiq-malik-bg.png);
+  background-position: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.attiq-malik .head {
+  padding-top: 50px;
+}
+.attiq-malik .head .heading {
+  color: #2C5362;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 80px;
+  font-weight: bolder;
+  line-height: 1.25;
+  padding: 0;
+  margin: 0;
+}
+.attiq-malik .head .heading-hr {
+  border: 2px solid var(--gold);
+  border-radius: 5px;
+  color: var(--gold);
+  width: 250px;
+  opacity: 1;
+  padding: 0;
+  margin: 0;
+}
+.attiq-malik .head .sub-heading {
+  color: var(--primary);
+  font-family: Roboto;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+.attiq-malik .row-2 i {
+  color: var(--gold);
+  font-size: 45px;
+}
+.attiq-malik .row-2 .info {
+  color: var(--primary);
+  font-size: 25px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.our-team {
+  background-image: url(/assets/images/our-team-bg.png);
+  background-position: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 2rem;
+}
+.our-team .head {
+  padding-top: 50px;
+}
+.our-team .head .heading {
+  color: #2C5362;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 80px;
+  font-weight: bolder;
+  line-height: 1.25;
+  padding: 0;
+  margin: 0;
+}
+.our-team .head .heading-hr {
+  border: 2px solid var(--gold);
+  border-radius: 5px;
+  color: var(--gold);
+  width: 250px;
+  opacity: 1;
+  padding: 0;
+  margin: 0;
+}
+.our-team .carousel-control-prev,
+.our-team .carousel-control-next {
+  color: var(--gold);
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 50px;
+}
+.our-team .carousel-control-prev:hover,
+.our-team .carousel-control-next:hover {
+  color: var(--gold);
+}
+.our-team a {
+  text-decoration: none;
+}
+.our-team a .card {
+  border-radius: 4px;
+}
+.our-team a .card .card-body {
+  padding: 5px;
+}
+.our-team a .card .card-body .card-img-top img {
+  border: 2px solid #567682;
+  height: 100%;
+}
+.our-team a .card .card-body .info {
+  align-items: center;
+  justify-content: center;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.our-team a .card .card-body .info .name {
+  font-size: 28px;
+  text-align: center;
+  color: var(--primary);
+  font-family: Roboto;
+  margin: 0;
+  font-weight: 500;
+  padding: 0;
+}
+.our-team a .card .card-body .info .hr-center {
+  transition: display 0.5s ease-in;
+  display: none;
+  margin: 0px 15%;
+  padding: 0;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  width: 70%;
+  opacity: 1;
+}
+.our-team a .card .card-body .info .designation {
+  transition: display 0.5s ease-in;
+  display: none;
+  color: var(--primary);
+  font-family: Roboto;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 5px 0;
+  margin: 0;
+}
+.our-team a .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.our-team a .card:hover .card-body .info .hr-center {
+  transition: display 0.5s ease-out;
+  display: block;
+}
+.our-team a .card:hover .card-body .info .designation {
+  transition: display 0.5s ease-out;
+  display: block;
+}
+.our-team #team-slider {
+  padding-top: 1rem;
+}
+.our-team #team-slider .carousel-item .row {
+  height: 370px;
+}
+.our-team #team-slider .carousel-item .row .col-md-3:nth-child(odd), .our-team #team-slider .carousel-item .row .col-sm-3:nth-child(odd), .our-team #team-slider .carousel-item .row .col-lg-3:nth-child(odd) {
+  margin-top: 2rem;
+}
+
+.blogs-and-articles {
+  background-image: url(/assets/images/blogs-bg.png);
+  background-position: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 2rem;
+}
+.blogs-and-articles .head {
+  padding-top: 50px;
+}
+.blogs-and-articles .head .heading {
+  color: var(--white);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 80px;
+  font-weight: bolder;
+  line-height: 1.25;
+  padding: 0;
+  margin: 0;
+}
+.blogs-and-articles .head .heading-hr {
+  border: 2px solid var(--gold);
+  border-radius: 5px;
+  color: var(--gold);
+  width: 250px;
+  opacity: 1;
+  padding: 0;
+  margin: 0;
+}
+.blogs-and-articles .carousel-control-prev,
+.blogs-and-articles .carousel-control-next {
+  color: var(--gold);
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 50px;
+}
+.blogs-and-articles .carousel-control-prev:hover,
+.blogs-and-articles .carousel-control-next:hover {
+  color: var(--gold);
+}
+.blogs-and-articles a {
+  text-decoration: none;
+}
+.blogs-and-articles a .card {
+  border-radius: 4px;
+}
+.blogs-and-articles a .card .image {
+  overflow: hidden;
+  border-radius: 4px;
+}
+.blogs-and-articles a .card .image img {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in;
+}
+.blogs-and-articles a .card .info {
+  display: none;
+  transition: display 0.5s ease-in;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 25%;
+  background-color: rgba(2, 49, 67, 0.6666666667);
+  border-radius: 0 0 5px 5px;
+  font-family: Roboto;
+  transition: all 0.5s ease-in;
+}
+.blogs-and-articles a .card .info .blog-name {
+  color: var(--white);
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 8px;
+  margin: 0;
+  font-weight: 500;
+}
+.blogs-and-articles a .card .info .text {
+  font-size: 15px;
+  padding-left: 8px;
+  padding-right: 15px;
+  text-align: left;
+  margin: 0;
+  line-height: 1;
+  font-weight: 300;
+  color: var(--white);
+}
+.blogs-and-articles a .card .info .date {
+  font-size: 10px;
+  padding-left: 8px;
+  padding-right: 13px;
+  text-align: right;
+  color: var(--white);
+}
+.blogs-and-articles a:hover .card .image img {
+  transform: scaleX(1);
+}
+.blogs-and-articles a:hover .card .info {
+  display: block;
+  transition: display 0.5s ease-out;
+}
+.blogs-and-articles #blogs-slider {
+  padding-top: 1rem;
+}
+.blogs-and-articles #blogs-slider .carousel-item .row .col-md-4:nth-child(even), .blogs-and-articles #blogs-slider .carousel-item .row .col-sm-4:nth-child(even), .blogs-and-articles #blogs-slider .carousel-item .row .col-lg-4:nth-child(even) {
+  margin-top: 2rem;
+}
+
+.clients {
+  background-image: url(/assets/images/clients-bg.png);
+  background-position: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 2rem;
+}
+.clients .head {
+  padding-top: 50px;
+}
+.clients .head .heading {
+  color: #2C5362;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 80px;
+  font-weight: bolder;
+  line-height: 1.25;
+  padding: 0;
+  margin: 0;
+}
+.clients .head .heading-hr {
+  border: 2px solid var(--gold);
+  border-radius: 5px;
+  color: var(--gold);
+  width: 250px;
+  opacity: 1;
+  padding: 0;
+  margin: 0;
+}
+.clients .card {
+  padding: 50px;
+  border: none;
+  background: transparent;
+}
+.clients .card .image {
+  height: 275px;
+  width: 275px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+}
+.clients .card .image img {
+  height: 100%;
+  width: 100%;
+}
+.clients .card .info {
+  margin-top: 2.5rem;
+  margin-left: 3rem;
+  margin-right: 1rem;
+  border-top: 2px solid var(--primary);
+  border-bottom: 2px solid var(--primary);
+  font-family: Roboto;
+}
+.clients .card .info .text {
+  font-size: 23px;
+  color: var(--primary);
+}
+.clients .card .info .text i {
+  color: var(--gold);
+  font-size: 25px;
+}
+.clients .card .info .name {
+  text-align: center;
+  color: var(--gold);
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.featured {
+  background-image: url(/assets/images/featured-bg.png);
+  background-position: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 2rem;
+}
+.featured .head {
+  padding-top: 50px;
+}
+.featured .head .heading {
+  color: #2C5362;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 80px;
+  font-weight: bolder;
+  line-height: 1.25;
+  padding: 0;
+  margin: 0;
+}
+.featured .head .heading-hr {
+  border: 2px solid var(--gold);
+  border-radius: 5px;
+  color: var(--gold);
+  width: 250px;
+  opacity: 1;
+  padding: 0;
+  margin: 0;
+}
+.featured .image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+  margin-top: 3rem;
+}
+.featured .image img {
+  height: 100%;
+  width: 100%;
+  transform: scale(0.8);
+  transition: all 0.3s ease-out;
+}
+.featured .image img:hover {
+  transform: scale(1);
+  transition: all 0.3s ease-in;
+}/*# sourceMappingURL=main.css.map */
