@@ -465,6 +465,10 @@ header .nav ul li .btn-contact:hover {
   padding: 0;
   margin: 0;
 }
+.our-team .row-2 {
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
 .our-team .carousel-control-prev,
 .our-team .carousel-control-next {
   color: var(--gold);
@@ -768,49 +772,49 @@ header .nav ul li .btn-contact:hover {
   transition: all 0.3s ease-in;
 }
 
-.footer {
+footer {
   background-color: var(--primary);
   padding-top: 4rem;
   padding-bottom: 2rem;
 }
-.footer .logo {
+footer .logo {
   width: 140px;
   -o-object-fit: contain;
      object-fit: contain;
   overflow: hidden;
 }
-.footer .logo img {
+footer .logo img {
   height: 100%;
   width: 100%;
 }
-.footer .info {
+footer .info {
   padding-top: 1rem;
 }
-.footer .info .text {
+footer .info .text {
   color: var(--white);
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
 }
-.footer .info1 .circles {
+footer .info1 .circles {
   display: flex;
   align-items: center;
   justify-content: start;
 }
-.footer .info1 .text {
+footer .info1 .text {
   color: var(--white);
   font-family: Roboto;
   font-size: 16px;
   font-weight: 400;
 }
-.footer .info1 .text a {
+footer .info1 .text a {
   text-decoration: none;
   color: var(--white);
 }
-.footer .info1 .text a:hover {
+footer .info1 .text a:hover {
   text-decoration: underline;
 }
-.footer .info1 .text .circle {
+footer .info1 .text .circle {
   font-size: 20px;
   color: var(--primary);
   background-color: var(--white);
@@ -822,7 +826,7 @@ header .nav ul li .btn-contact:hover {
   width: 30px;
   margin-right: 15px;
 }
-.footer .info1 .form button {
+footer .info1 .form button {
   background-color: var(--gold);
   color: var(--primary);
   border: 1px solid var(--gold);
@@ -830,22 +834,218 @@ header .nav ul li .btn-contact:hover {
   font-weight: 500;
   margin-left: 5px;
 }
-.footer .info1 .form button:hover {
+footer .info1 .form button:hover {
   background-color: transparent;
   color: var(--gold);
 }
-.footer .title {
+footer .title {
   color: var(--gold);
   font-family: Roboto;
   font-size: 18px;
   font-weight: 600;
 }
-.footer .title .heading {
+footer .title .heading {
   margin: 0;
 }
-.footer .title1 {
+footer .title1 {
   color: var(--gold);
   font-family: Roboto;
   font-size: 18px;
   font-weight: 600;
+}
+footer .line {
+  margin-left: 9rem;
+  margin-right: 9rem;
+  color: var(--white);
+  border: 1px solid var(--white);
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+footer .rights {
+  color: var(--white);
+  text-align: center;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .pl-5 {
+    padding-left: 1rem !important;
+  }
+  .pt-5 {
+    padding-top: 1rem !important;
+  }
+  header {
+    padding: 10px 15px;
+  }
+  header h1 {
+    font-size: 40px;
+  }
+  .banner .heading-sm {
+    font-size: 25px !important;
+  }
+  .banner .heading-lg {
+    font-size: 50px !important;
+  }
+  .banner .content {
+    font-size: 16px !important;
+  }
+  .banner .help .help-btn {
+    font-size: 18px !important;
+  }
+  .banner-2 .text {
+    padding: 82px 0 86px;
+  }
+  .banner-2 .text p {
+    font-size: 50px;
+  }
+  .services .head {
+    padding-top: 50px;
+  }
+  .services .head .heading {
+    font-size: 50px;
+  }
+  .services .row-cards .card {
+    margin-top: 1rem;
+  }
+  .services .row-cards .card .image {
+    height: 450px;
+  }
+  .services .row-cards .card .info {
+    top: 300px;
+  }
+  .services .row-cards .card .info .text {
+    font-size: 25px;
+  }
+  .services .row-cards .card .info .button .btn-help {
+    font-size: 20px;
+  }
+  .services .row-cards .card-lg .image {
+    height: 168px;
+  }
+  .services .row-cards .card-lg .info {
+    top: 40px;
+    padding: 0rem;
+  }
+  .about-wolfee .head {
+    padding-top: 50px;
+  }
+  .about-wolfee .head .heading {
+    font-size: 50px;
+  }
+  .about-wolfee .row-2 {
+    padding-right: 0px;
+    padding-bottom: 1rem;
+  }
+  .about-wolfee .row-2 .text {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 0rem;
+    font-size: 18px;
+  }
+  .about-wolfee .row-2 .info {
+    top: 315px;
+    padding: 10px 75px 5px 75px;
+  }
+  .about-wolfee .row-2 .info .text-sm {
+    font-size: 28px;
+    text-align: center;
+  }
+  .about-wolfee .row-2 .info .text-lg {
+    text-align: center;
+    font-size: 38px;
+  }
+  .banner-blue-3 .text {
+    padding: 82px 0 86px;
+  }
+  .banner-blue-3 .text p {
+    font-size: 50px;
+  }
+  .attiq-malik .c-1 {
+    order: 1;
+  }
+  .attiq-malik .c-2 {
+    order: 0;
+  }
+  .attiq-malik .head {
+    padding-top: 50px;
+  }
+  .attiq-malik .head .heading {
+    font-size: 50px;
+  }
+  .attiq-malik .head .sub-heading {
+    font-size: 25px;
+  }
+  .attiq-malik .row-2 i {
+    font-size: 30px;
+  }
+  .attiq-malik .row-2 .info {
+    font-size: 18px;
+  }
+  .our-team .head {
+    padding-top: 50px;
+  }
+  .our-team .head .heading {
+    font-size: 50px;
+  }
+  .our-team .row-2 {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+  .our-team #team-slider .carousel-item .row .col-md-4 {
+    margin-top: 2rem;
+  }
+  .our-team #team-slider .carousel-item .row .col-md-4 .card .info {
+    display: block;
+  }
+  .blogs-and-articles .head {
+    padding-top: 50px;
+  }
+  .blogs-and-articles .head .heading {
+    font-size: 50px;
+  }
+  .blogs-and-articles #blogs-slider .carousel-item .row .col-md-4 {
+    margin-top: 2rem;
+  }
+  .blogs-and-articles #blogs-slider .carousel-item .row .col-md-4 .card .info {
+    display: block;
+  }
+  .clients .head {
+    padding-top: 50px;
+  }
+  .clients .head .heading {
+    font-size: 50px;
+  }
+  .clients .card {
+    padding: 10px;
+  }
+  .clients .card .image {
+    padding-top: 50px;
+  }
+  .clients .card .image img {
+    height: 100px;
+    width: 100px;
+  }
+  .clients .card .info {
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+  .clients .card .info .text {
+    font-size: 14px;
+    color: var(--primary);
+  }
+  .clients .card .info .text i {
+    color: var(--gold);
+    font-size: 16px;
+  }
+  .clients .card .info .name {
+    font-size: 17px;
+  }
+  .featured .head {
+    padding-top: 50px;
+  }
+  .featured .head .heading {
+    font-size: 50px;
+  }
 }/*# sourceMappingURL=main.css.map */
