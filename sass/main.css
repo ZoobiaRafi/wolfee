@@ -535,7 +535,7 @@ header .nav ul li .btn-contact:hover {
   padding-top: 1rem;
 }
 .our-team #team-slider .carousel-item .row {
-  height: 370px;
+  height: 450px;
 }
 .our-team #team-slider .carousel-item .row .col-md-3:nth-child(odd), .our-team #team-slider .carousel-item .row .col-sm-3:nth-child(odd), .our-team #team-slider .carousel-item .row .col-lg-3:nth-child(odd) {
   margin-top: 2rem;
