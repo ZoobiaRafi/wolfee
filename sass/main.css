@@ -24,6 +24,14 @@ body {
   transition: all ease 0.5s;
 }
 
+.pl-5 {
+  padding-left: 3rem !important;
+}
+
+.pr-5 {
+  padding-right: 3rem !important;
+}
+
 header {
   padding: 0;
   margin: 0;
@@ -758,4 +766,86 @@ header .nav ul li .btn-contact:hover {
 .featured .image img:hover {
   transform: scale(1);
   transition: all 0.3s ease-in;
+}
+
+.footer {
+  background-color: var(--primary);
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+.footer .logo {
+  width: 140px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+}
+.footer .logo img {
+  height: 100%;
+  width: 100%;
+}
+.footer .info {
+  padding-top: 1rem;
+}
+.footer .info .text {
+  color: var(--white);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer .info1 .circles {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.footer .info1 .text {
+  color: var(--white);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer .info1 .text a {
+  text-decoration: none;
+  color: var(--white);
+}
+.footer .info1 .text a:hover {
+  text-decoration: underline;
+}
+.footer .info1 .text .circle {
+  font-size: 20px;
+  color: var(--primary);
+  background-color: var(--white);
+  border-radius: 50px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  margin-right: 15px;
+}
+.footer .info1 .form button {
+  background-color: var(--gold);
+  color: var(--primary);
+  border: 1px solid var(--gold);
+  width: 200px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+.footer .info1 .form button:hover {
+  background-color: transparent;
+  color: var(--gold);
+}
+.footer .title {
+  color: var(--gold);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer .title .heading {
+  margin: 0;
+}
+.footer .title1 {
+  color: var(--gold);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */
