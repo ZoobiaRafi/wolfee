@@ -563,9 +563,13 @@ header .nav ul li .btn-contact:hover {
 .our-team a .card .card-body {
   padding: 5px;
 }
+.our-team a .card .card-body .card-img-top {
+  overflow: hidden;
+}
 .our-team a .card .card-body .card-img-top img {
   border: 2px solid #567682;
   height: 100%;
+  transition: all 0.5s ease-in;
 }
 .our-team a .card .card-body .info {
   align-items: center;
@@ -608,6 +612,10 @@ header .nav ul li .btn-contact:hover {
 }
 .our-team a .card:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.our-team a .card:hover .card-body .card-img-top img {
+  transform: scale(1.2);
+  transition: all 0.5s ease-out;
 }
 .our-team a .card:hover .card-body .info .hr-center {
   transition: display 0.5s ease-out;
