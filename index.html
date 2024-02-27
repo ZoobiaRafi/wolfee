@@ -6,7 +6,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Wolfee</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="icon" href="assets/images/logo.png" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
 
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
@@ -15,10 +15,12 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
     <link rel='stylesheet' type='text/css' media='screen' href='sass/main.css'>
 
     <!-- <script src='assets/js/main.js'></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -29,12 +31,18 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-4 col-lg-4 d-flex justify-content-center align-items-center">
+                <div class="d-flex d-md-none head-nav col-3">
+                    <div class="nav-icon">
+                        <a href="#" class="menu-btn"><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-lg-4 col-7 d-flex justify-content-center align-items-center">
                     <div class="logo">
                         <img src="assets/images/logo.png" alt="logo">
                     </div>
-                    <h1>WOOLFE & CO</h1>
+                    <!-- <h1>WOOLFE & CO</h1> -->
                 </div>
+                
                 <div class="col-md-8 col-sm-8 col-lg-8 d-none d-md-block">
                     <div class="nav">
                         <ul>
@@ -43,7 +51,7 @@
                             <li class="menu-item"><a href="#">Blog</a></li>
                             <li class="menu-item"><a href="#">What we do?</a></li>
                             <li class="menu-item"><a href="#">Pricing</a></li>
-                            <li><a class="btn btn-contact btn-primary" href="#">Contact Us</a></li>
+                            <li><a class="btn btn-contact btn-primary" href="tel:01582380938">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -221,14 +229,14 @@
                     <hr class="heading-hr">
                 </div>
             </div>
-            <div class="row row-2">
+            <div class="row row-2 d-none d-md-block">
                 <div class="col-md-12 col-sm-12 col-lg-12 d-flex align-items-end justify-content-end">
-                    <button class="carousel-control-prev justify-content-start w-auto px-3" type="button"
+                    <button class="carousel-control-prev justify-content-start w-auto" type="button"
                         data-bs-target="#team-slider" data-bs-slide="prev">
                         <span class="fa-regular fa-circle-chevron-left" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next justify-content-end w-auto px-3" type="button"
+                    <button class="carousel-control-next justify-content-end w-auto" type="button"
                         data-bs-target="#team-slider" data-bs-slide="next">
                         <span class="fa-regular fa-circle-chevron-right" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
@@ -377,6 +385,106 @@
                     </div>
                 </div>
             </div>
+            <div class="row row-2 d-block d-md-none">
+                <div class="col-md-12 col-sm-12 col-lg-12 d-flex align-items-end justify-content-end">
+                    <button class="carousel-control-prev justify-content-start w-auto" type="button"
+                        data-bs-target="#team-slider2" data-bs-slide="prev">
+                        <span class="fa-regular fa-circle-chevron-left" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next justify-content-end w-auto" type="button"
+                        data-bs-target="#team-slider2" data-bs-slide="next">
+                        <span class="fa-regular fa-circle-chevron-right" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="col-md-12 col-sm-12 col-lg-12">
+                    <div id="team-slider2" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row px-3">
+                                    <div class="col-md-3 col-sm-3 col-lg-3">
+                                        <a href="#">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="card-img-top">
+                                                        <img class="w-100" src="assets/images/about.png" alt="name1">
+                                                    </div>
+                                                    <div class="info">
+                                                        <p class="name">Emma Williamson</p>
+                                                        <hr class="hr-center">
+                                                        <p class="designation">CRIMINAL DEFENCE SOLICITOR</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row px-3">
+                                    <div class="col-md-3 col-sm-3 col-lg-3">
+                                        <a href="#">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="card-img-top">
+                                                        <img class="w-100" src="assets/images/about.png" alt="name1">
+                                                    </div>
+                                                    <div class="info">
+                                                        <p class="name">Emma Williamson</p>
+                                                        <hr class="hr-center">
+                                                        <p class="designation">CRIMINAL DEFENCE SOLICITOR</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row px-3">
+                                    <div class="col-md-3 col-sm-3 col-lg-3">
+                                        <a href="#">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="card-img-top">
+                                                        <img class="w-100" src="assets/images/about.png" alt="name1">
+                                                    </div>
+                                                    <div class="info">
+                                                        <p class="name">Emma Williamson</p>
+                                                        <hr class="hr-center">
+                                                        <p class="designation">CRIMINAL DEFENCE SOLICITOR</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row px-3">
+                                    <div class="col-md-3 col-sm-3 col-lg-3">
+                                        <a href="#">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="card-img-top">
+                                                        <img class="w-100" src="assets/images/about.png" alt="name1">
+                                                    </div>
+                                                    <div class="info">
+                                                        <p class="name">Emma Williamson</p>
+                                                        <hr class="hr-center">
+                                                        <p class="designation">CRIMINAL DEFENCE SOLICITOR</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -388,14 +496,14 @@
                     <hr class="heading-hr">
                 </div>
             </div>
-            <div class="row row-2">
-                <div class="col-md-12 col-sm-12 col-lg-12 d-flex align-items-end justify-content-end px-5">
-                    <button class="carousel-control-prev justify-content-start w-auto px-3" type="button"
+            <div class="row row-2 d-none d-md-block">
+                <div class="col-md-12 col-sm-12 col-lg-12 d-flex align-items-end justify-content-end">
+                    <button class="carousel-control-prev justify-content-start w-auto" type="button"
                         data-bs-target="#blogs-slider" data-bs-slide="prev">
                         <span class="fa-regular fa-circle-chevron-left" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next justify-content-end w-auto px-3" type="button"
+                    <button class="carousel-control-next justify-content-end w-auto" type="button"
                         data-bs-target="#blogs-slider" data-bs-slide="next">
                         <span class="fa-regular fa-circle-chevron-right" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
@@ -436,6 +544,132 @@
                                             </div>
                                         </a>
                                     </div>
+                                    <div class="col-md-4 col-sm-4 col-lg-4">
+                                        <a href="#">
+                                            <div class="card">
+                                                <div class="image">
+                                                    <img class="w-100" src="assets/images/blog3.png" alt="blog1">
+                                                </div>
+                                                <div class="info">
+                                                    <p class="blog-name">BLOG POST NAME</p>
+                                                    <p class="text">Lorem ipsum dolor sit amet, consetetur adi psc ing
+                                                        nonumy irmodLorem ipsum dolor sit amet, con</p>
+                                                    <p class="date">Published: 20/1/24</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row px-3">
+                                    <div class="col-md-4 col-sm-4 col-lg-4">
+                                        <a href="#">
+                                            <div class="card">
+                                                <div class="image">
+                                                    <img class="w-100" src="assets/images/blog1.png" alt="blog1">
+                                                </div>
+                                                <div class="info">
+                                                    <p class="blog-name">BLOG POST NAME</p>
+                                                    <p class="text">Lorem ipsum dolor sit amet, consetetur adi psc ing
+                                                        nonumy irmodLorem ipsum dolor sit amet, con</p>
+                                                    <p class="date">Published: 20/1/24</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-lg-4">
+                                        <a href="#">
+                                            <div class="card">
+                                                <div class="image">
+                                                    <img class="w-100" src="assets/images/blog2.png" alt="blog1">
+                                                </div>
+                                                <div class="info">
+                                                    <p class="blog-name">BLOG POST NAME</p>
+                                                    <p class="text">Lorem ipsum dolor sit amet, consetetur adi psc ing
+                                                        nonumy irmodLorem ipsum dolor sit amet, con</p>
+                                                    <p class="date">Published: 20/1/24</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 col-lg-4">
+                                        <a href="#">
+                                            <div class="card">
+                                                <div class="image">
+                                                    <img class="w-100" src="assets/images/blog3.png" alt="blog1">
+                                                </div>
+                                                <div class="info">
+                                                    <p class="blog-name">BLOG POST NAME</p>
+                                                    <p class="text">Lorem ipsum dolor sit amet, consetetur adi psc ing
+                                                        nonumy irmodLorem ipsum dolor sit amet, con</p>
+                                                    <p class="date">Published: 20/1/24</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-2 d-block d-md-none">
+                <div class="col-md-12 col-sm-12 col-lg-12 d-flex align-items-end justify-content-end">
+                    <button class="carousel-control-prev justify-content-start w-auto" type="button"
+                        data-bs-target="#blogs-slider2" data-bs-slide="prev">
+                        <span class="fa-regular fa-circle-chevron-left" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next justify-content-end w-auto" type="button"
+                        data-bs-target="#blogs-slider2" data-bs-slide="next">
+                        <span class="fa-regular fa-circle-chevron-right" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div class="col-md-12 col-sm-12 col-lg-12">
+                    <div id="blogs-slider2" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row px-3">
+                                    <div class="col-md-4 col-sm-4 col-lg-4">
+                                        <a href="#">
+                                            <div class="card">
+                                                <div class="image">
+                                                    <img class="w-100" src="assets/images/blog1.png" alt="blog1">
+                                                </div>
+                                                <div class="info">
+                                                    <p class="blog-name">BLOG POST NAME</p>
+                                                    <p class="text">Lorem ipsum dolor sit amet, consetetur adi psc ing
+                                                        nonumy irmodLorem ipsum dolor sit amet, con</p>
+                                                    <p class="date">Published: 20/1/24</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row px-3">
+                                    <div class="col-md-4 col-sm-4 col-lg-4">
+                                        <a href="#">
+                                            <div class="card">
+                                                <div class="image">
+                                                    <img class="w-100" src="assets/images/blog2.png" alt="blog1">
+                                                </div>
+                                                <div class="info">
+                                                    <p class="blog-name">BLOG POST NAME</p>
+                                                    <p class="text">Lorem ipsum dolor sit amet, consetetur adi psc ing
+                                                        nonumy irmodLorem ipsum dolor sit amet, con</p>
+                                                    <p class="date">Published: 20/1/24</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row px-3">
                                     <div class="col-md-4 col-sm-4 col-lg-4">
                                         <a href="#">
                                             <div class="card">
@@ -527,7 +761,7 @@
             <div class="row">
                 <div class="col-md-3 col-sm-12 col-lg-3 col-12">
                     <div class="logo">
-                        <img src="assets/images/logo.png" alt="footer-logo">
+                        <img src="assets/images/favicon.png" alt="footer-logo">
                     </div>
                     <div class="info">
                         <p class="text">
@@ -614,6 +848,153 @@
         </div>
     </footer>
 
+    <div class="slideRightToLeft menu-slider">
+        <div class="base-sidebar-content p-3">
+            <div class="base-sidebar-content-body">
+                <div class="d-flex justify-content-between w-100 border-bottom">
+                    <div class="logo">
+                        <img src="assets/images/logo.png" alt="logo">
+                    </div>
+                    <button class="back-to-cart menu_slide_close border-0 fs-1 p-0"><i
+                            class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="menu-main-body p-2">
+
+                    <div class="row">
+                        <div class="col-md-6 px-3">
+                            <div class="accordion" id="menu_accordion">
+                                <div id="menu_accordion_home">
+                                    <h4 class="accordion-header">
+                                        <a href="#" class="accordion-button single shadow-none" type="button">
+                                            <i style="color: var(--primary);"
+                                                class="fa-solid fa-house-chimney"></i>&nbsp; Home
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="menu_accordion_team">
+                                    <h4 class="accordion-header">
+                                        <a href="#" class="accordion-button single shadow-none" type="button">
+                                           Our Team
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="menu_accordion_blog">
+                                    <h4 class="accordion-header">
+                                        <a href="#" class="accordion-button single shadow-none" type="button">
+                                           Blog
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="menu_accordion_wwd">
+                                    <h4 class="accordion-header">
+                                        <a href="#" class="accordion-button single shadow-none" type="button">
+                                           What we do?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="menu_accordion_pricing">
+                                    <h4 class="accordion-header">
+                                        <a href="#" class="accordion-button single shadow-none" type="button">
+                                           Pricing
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="menu_accordion_final">
+                                    <h4 class="accordion-header">
+                                        <a href="tel:01582380938" class="accordion-button single shadow-none" type="button">Contact Us
+                                        </a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cookie-popup-container">
+        <div class="cookie-popup">
+            <div class="cookie-header">
+                <div class="cookie-icon">
+                    <i class="fa-solid fa-cookie-bite"></i>
+                </div>
+                <div class="cookie-heading">
+                    <h3>Cookies Consent</h3>
+                </div>
+            </div>
+            <div class="cookie-para">
+                <p>We use cookies to ensure that we give you the best experience on our website and to provide our
+                    services.</p>
+            </div>
+            <div class="cookie-hr">
+                <hr />
+            </div>
+            <div class="cookie-button-container">
+                <div class="nav-buttons d-flex">
+                    <a class="d-flex justify-content-center align-items-center">
+                        <button class="btn accept-cookie"><span>Accept</span></button>
+                    </a>
+                    <a target="_blank"
+                        class="d-flex justify-content-center align-items-center">
+                        <button class="btn transparent decline-cookie"><span>Decline</span></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).on('click', ".menu-btn", function () {
+            if ($(".menu-slider").hasClass("show") === false) {
+                $(".menu-slider").addClass("show");
+                $("body").attr("style", "overflow: hidden;");
+                $(".base-sidebar-background").css("display", "");
+            } else {
+                $(".menu-slider").removeClass("show");
+                $("body").removeAttr("style");
+            }
+        });
+        $(document).on('click', ".menu_slide_close, .base-sidebar-background", function () {
+            $(".menu-slider").removeClass("show");
+            $(".base-sidebar-background").css("overflow", "hidden");
+            $("body").removeAttr("style");
+            $(".base-sidebar-background").css("display", "none");
+        });
+
+        $(document).ready(function () {
+            $('#team-slider').carousel({
+                interval: 2000,
+                ride: true
+            });
+            $('#team-slider2').carousel({
+                interval: 2000,
+                ride: true
+            });
+            $('#blogs-slider').carousel({
+                interval: 2000,
+                ride: true
+            });
+            $('#blogs-slider2').carousel({
+                interval: 2000,
+                ride: true
+            });
+
+            if (localStorage.getItem('cookieAccepted') === '1') {
+                $('.cookie-popup-container').hide();
+                $('html').removeClass('cookie-blocked');
+            } else {
+                $('.cookie-popup-container').fadeIn(200);
+            }
+            $('.accept-cookie').click(function () {
+                $('.cookie-popup').slideUp(300);
+                $('.cookie-popup-container').fadeOut(300);
+                $('html').removeClass('cookie-blocked');
+                localStorage.setItem('cookieAccepted', '1');
+            });
+        });
+    </script>
 </body>
 
 </html>

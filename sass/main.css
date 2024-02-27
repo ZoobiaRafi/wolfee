@@ -1,8 +1,76 @@
+.cookie-blocked {
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow: hidden !important;
+}
+
+.cookie-popup-container {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  top: 0;
+  overflow: hidden;
+  display: none;
+}
+.cookie-popup-container .cookie-popup {
+  max-width: 400px;
+  background-color: var(--white);
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+.cookie-popup-container .cookie-popup .cookie-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.cookie-popup-container .cookie-popup .cookie-header .cookie-icon {
+  padding-right: 10px;
+}
+.cookie-popup-container .cookie-popup .cookie-header .cookie-icon i {
+  font-size: 1.4rem;
+  color: var(--primary);
+}
+.cookie-popup-container .cookie-popup .cookie-header .cookie-heading h3 {
+  color: var(--primary);
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.cookie-popup-container .cookie-popup .cookie-button-container .nav-buttons a {
+  text-decoration: none;
+}
+.cookie-popup-container .cookie-popup .cookie-button-container .nav-buttons a button {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: var(--white);
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.cookie-popup-container .cookie-popup .cookie-button-container .nav-buttons a button:hover {
+  color: var(--primary);
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+  .cookie-popup {
+    width: 97%;
+    max-width: 97%;
+    margin: 1.5%;
+    bottom: 0px !important;
+    right: 0px !important;
+  }
+}
 /*------------------ Colors:Start ------------------------*/
 :root {
   /*------------------ Primary Colors ------------------------*/
   --primary: #023143 !important;
-  --secondary: #567682!important;
+  --secondary: #567682 !important;
   --black: #000000 !important;
   --white: #ffffff !important;
   --gold: #E9BA3F !important;
@@ -37,9 +105,12 @@ header {
   margin: 0;
   border-bottom: 1px solid rgba(112, 112, 112, 0.3882352941);
 }
+header .nav-icon a i {
+  font-size: 24px !important;
+  color: var(--primary);
+  margin-top: 20px;
+}
 header .logo {
-  height: 70px;
-  width: 80px;
   padding: 5px;
 }
 header .logo img {
@@ -216,8 +287,8 @@ header .nav ul li .btn-contact:hover {
   padding: 0;
   margin: 0;
 }
-.services .row-cards {
-  padding-top: 3rem;
+.services .row-cards .card {
+  margin-top: 3rem;
 }
 .services .row-cards .card .image {
   height: 550px;
@@ -340,18 +411,18 @@ header .nav ul li .btn-contact:hover {
 }
 .about-wolfee .row-2 .info {
   position: absolute;
-  top: 315px;
   left: 0;
   right: 0;
   bottom: 0;
+  height: 100px;
   background-color: rgba(2, 49, 67, 0.6666666667);
   border-radius: 0 0 5px 5px;
   transition: all 0.5s ease-in;
-  padding: 10px 75px 5px 75px;
+  padding-top: 10px;
 }
 .about-wolfee .row-2 .info .text-sm {
   color: var(--white);
-  text-align: right;
+  text-align: center;
   font-size: 30px;
   line-height: 1;
   padding: 0;
@@ -476,6 +547,8 @@ header .nav ul li .btn-contact:hover {
   display: inline-block;
   text-decoration: none;
   font-size: 50px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .our-team .carousel-control-prev:hover,
 .our-team .carousel-control-next:hover {
@@ -502,13 +575,14 @@ header .nav ul li .btn-contact:hover {
   margin: 0;
 }
 .our-team a .card .card-body .info .name {
-  font-size: 28px;
+  font-size: 25px;
+  line-height: 1;
   text-align: center;
   color: var(--primary);
   font-family: Roboto;
   margin: 0;
   font-weight: 500;
-  padding: 0;
+  padding: 5px 0Spx;
 }
 .our-team a .card .card-body .info .hr-center {
   transition: display 0.5s ease-in;
@@ -549,8 +623,31 @@ header .nav ul li .btn-contact:hover {
 .our-team #team-slider .carousel-item .row {
   height: 450px;
 }
-.our-team #team-slider .carousel-item .row .col-md-3:nth-child(odd), .our-team #team-slider .carousel-item .row .col-sm-3:nth-child(odd), .our-team #team-slider .carousel-item .row .col-lg-3:nth-child(odd) {
+.our-team #team-slider .carousel-item .row .col-md-3:nth-child(odd),
+.our-team #team-slider .carousel-item .row .col-sm-3:nth-child(odd),
+.our-team #team-slider .carousel-item .row .col-lg-3:nth-child(odd) {
   margin-top: 2rem;
+}
+.our-team #team-slider2 {
+  padding-top: 1rem;
+}
+.our-team #team-slider2 .carousel-item .row {
+  height: 450px;
+}
+.our-team #team-slider2 .carousel-item .row .col-md-3,
+.our-team #team-slider2 .carousel-item .row .col-sm-3,
+.our-team #team-slider2 .carousel-item .row .col-lg-3 {
+  margin-top: 1rem;
+}
+.our-team #team-slider2 .carousel-item .row .col-md-3 .card .info .hr-center,
+.our-team #team-slider2 .carousel-item .row .col-sm-3 .card .info .hr-center,
+.our-team #team-slider2 .carousel-item .row .col-lg-3 .card .info .hr-center {
+  display: block;
+}
+.our-team #team-slider2 .carousel-item .row .col-md-3 .card .info .designation,
+.our-team #team-slider2 .carousel-item .row .col-sm-3 .card .info .designation,
+.our-team #team-slider2 .carousel-item .row .col-lg-3 .card .info .designation {
+  display: block;
 }
 
 .blogs-and-articles {
@@ -581,16 +678,22 @@ header .nav ul li .btn-contact:hover {
   padding: 0;
   margin: 0;
 }
-.blogs-and-articles .carousel-control-prev,
-.blogs-and-articles .carousel-control-next {
+.blogs-and-articles .row-2 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.blogs-and-articles .row-2 .carousel-control-prev,
+.blogs-and-articles .row-2 .carousel-control-next {
   color: var(--gold);
   position: relative;
   display: inline-block;
   text-decoration: none;
   font-size: 50px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-.blogs-and-articles .carousel-control-prev:hover,
-.blogs-and-articles .carousel-control-next:hover {
+.blogs-and-articles .row-2 .carousel-control-prev:hover,
+.blogs-and-articles .row-2 .carousel-control-next:hover {
   color: var(--gold);
 }
 .blogs-and-articles a {
@@ -656,7 +759,9 @@ header .nav ul li .btn-contact:hover {
 .blogs-and-articles #blogs-slider {
   padding-top: 1rem;
 }
-.blogs-and-articles #blogs-slider .carousel-item .row .col-md-4:nth-child(even), .blogs-and-articles #blogs-slider .carousel-item .row .col-sm-4:nth-child(even), .blogs-and-articles #blogs-slider .carousel-item .row .col-lg-4:nth-child(even) {
+.blogs-and-articles #blogs-slider .carousel-item .row .col-md-4:nth-child(even),
+.blogs-and-articles #blogs-slider .carousel-item .row .col-sm-4:nth-child(even),
+.blogs-and-articles #blogs-slider .carousel-item .row .col-lg-4:nth-child(even) {
   margin-top: 2rem;
 }
 
@@ -868,6 +973,102 @@ footer .rights {
   font-size: 12px;
 }
 
+.slideRightToLeft {
+  width: 0;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 99999999999;
+}
+
+.base-sidebar-background {
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background: rgb(247, 247, 247);
+}
+
+.base-sidebar-content {
+  overflow-y: auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  flex-direction: column;
+  right: 0;
+  left: auto;
+  display: flex;
+  background: #fff;
+  max-width: 600px;
+}
+.base-sidebar-content .base-sidebar-content-body {
+  flex: 1;
+  display: unset;
+}
+.base-sidebar-content .base-sidebar-content-body .back-to-cart {
+  background-color: transparent;
+}
+
+.slideRightToLeft.show {
+  right: 0;
+  width: 100%;
+  visibility: inherit;
+  opacity: 1;
+  position: relative;
+}
+.slideRightToLeft.show .logo img {
+  height: 60px;
+  width: 160px;
+}
+.slideRightToLeft.show .menu-main-body {
+  padding: 0 20px 30px;
+}
+.slideRightToLeft.show .menu-main-body .main-heading {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #343434;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto;
+}
+.slideRightToLeft.show .menu-main-body #menu_accordion a {
+  text-decoration: none;
+  color: #343434;
+  font-size: 14px;
+}
+.slideRightToLeft.show .menu-main-body #menu_accordion .accordion-button {
+  border-bottom: 1px solid var(--lightGrey);
+}
+.slideRightToLeft.show .menu-main-body #menu_accordion .accordion-button::after {
+  content: "+";
+  background: none;
+  font-size: 20px;
+}
+.slideRightToLeft.show .menu-main-body #menu_accordion .accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+}
+.slideRightToLeft.show .menu-main-body #menu_accordion .accordion-button:not(.collapsed)::after {
+  transform: rotate(0);
+  font-size: 20px;
+  content: "-";
+  background: none;
+}
+.slideRightToLeft.show .menu-main-body #menu_accordion .accordion-button.single::after {
+  content: "";
+  background: none;
+}
+.slideRightToLeft.show .menu-main-body #menu_accordion .accordion-button.single.sale {
+  color: red;
+}
+
 @media only screen and (max-width: 600px) {
   .pl-5 {
     padding-left: 1rem !important;
@@ -944,8 +1145,7 @@ footer .rights {
     font-size: 18px;
   }
   .about-wolfee .row-2 .info {
-    top: 315px;
-    padding: 10px 75px 5px 75px;
+    padding-top: 10px;
   }
   .about-wolfee .row-2 .info .text-sm {
     font-size: 28px;
@@ -992,6 +1192,12 @@ footer .rights {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
   }
+  .our-team .row-2 .carousel-control-prev,
+  .our-team .row-2 .carousel-control-next {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    font-size: 35px;
+  }
   .our-team #team-slider .carousel-item .row .col-md-4 {
     margin-top: 2rem;
   }
@@ -1004,10 +1210,20 @@ footer .rights {
   .blogs-and-articles .head .heading {
     font-size: 50px;
   }
-  .blogs-and-articles #blogs-slider .carousel-item .row .col-md-4 {
+  .blogs-and-articles .row-2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .blogs-and-articles .row-2 .carousel-control-prev,
+  .blogs-and-articles .row-2 .carousel-control-next {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    font-size: 35px;
+  }
+  .blogs-and-articles #blogs-slider2 .carousel-item .row .col-md-4 {
     margin-top: 2rem;
   }
-  .blogs-and-articles #blogs-slider .carousel-item .row .col-md-4 .card .info {
+  .blogs-and-articles #blogs-slider2 .carousel-item .row .col-md-4 .card .info {
     display: block;
   }
   .clients .head {
