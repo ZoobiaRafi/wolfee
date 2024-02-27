@@ -894,6 +894,23 @@ header {
             margin: 0;
         }
     }
+    
+    .row-2 {
+        .carousel-control-prev,
+        .carousel-control-next {
+            color: var(--gold);
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 50px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            &:hover {
+                color: var(--gold);
+            }
+        }
+    }
 
     .card {
         padding: 50px;
@@ -1164,7 +1181,7 @@ footer {
     .logo{
         img{
             height: 60px;
-            width: 160px;
+            width: 200px;
         }
     }
 
@@ -1515,6 +1532,17 @@ footer {
             }
         }
 
+        .row-2 {
+            padding-right: 1rem !important;
+            padding-left: 1rem !important;
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                padding-left: 0.25rem;
+                padding-right: 0.25rem;
+                font-size: 35px;
+            }
+        }
     }
 
     .featured {

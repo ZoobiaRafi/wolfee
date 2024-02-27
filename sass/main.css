@@ -793,6 +793,20 @@ header .nav ul li .btn-contact:hover {
   padding: 0;
   margin: 0;
 }
+.clients .row-2 .carousel-control-prev,
+.clients .row-2 .carousel-control-next {
+  color: var(--gold);
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 50px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.clients .row-2 .carousel-control-prev:hover,
+.clients .row-2 .carousel-control-next:hover {
+  color: var(--gold);
+}
 .clients .card {
   padding: 50px;
   border: none;
@@ -1026,7 +1040,7 @@ footer .rights {
 }
 .slideRightToLeft.show .logo img {
   height: 60px;
-  width: 160px;
+  width: 200px;
 }
 .slideRightToLeft.show .menu-main-body {
   padding: 0 20px 30px;
@@ -1257,6 +1271,16 @@ footer .rights {
   }
   .clients .card .info .name {
     font-size: 17px;
+  }
+  .clients .row-2 {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+  .clients .row-2 .carousel-control-prev,
+  .clients .row-2 .carousel-control-next {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    font-size: 35px;
   }
   .featured .head {
     padding-top: 50px;

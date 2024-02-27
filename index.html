@@ -702,26 +702,104 @@
                     <hr class="heading-hr">
                 </div>
             </div>
-            <div class="row">
+            <div class="row row-2">
+                <div class="col-md-12 col-sm-12 col-lg-12 d-flex align-items-end justify-content-end">
+                    <button class="carousel-control-prev justify-content-start w-auto" type="button"
+                        data-bs-target="#client-slider" data-bs-slide="prev">
+                        <span class="fa-regular fa-circle-chevron-left" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next justify-content-end w-auto" type="button"
+                        data-bs-target="#client-slider" data-bs-slide="next">
+                        <span class="fa-regular fa-circle-chevron-right" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
                 <div class="col-md-12 col-sm-12 col-lg-12">
-                    <div class="card">
-                        <div class="row">
-                            <div class="col-3">
-                                <div class="image">
-                                    <img src="assets/images/clients-avatar.png" alt="clients">
+                    <div id="client-slider" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row px-3">
+                                    <div class="col-md-12 col-sm-12 col-lg-12">
+                                        <div class="card">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <div class="image">
+                                                        <img src="assets/images/clients-avatar.png" alt="clients">
+                                                    </div>
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="info">
+                                                        <p class="text text-center">
+                                                            <i class="fa-solid fa-quote-left"></i>
+                                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                                            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                                            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                                            <i class="fa-solid fa-quote-right"></i>
+                                                        </p>
+                                                        <p class="name">-Emma Williamson</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-9">
-                                <div class="info">
-                                    <p class="text text-center">
-                                        <i class="fa-solid fa-quote-left"></i>
-                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-                                        vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                                        no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                                        <i class="fa-solid fa-quote-right"></i>
-                                    </p>
-                                    <p class="name">-Emma Williamson</p>
+                            <div class="carousel-item">
+                                <div class="row px-3">
+                                    <div class="col-md-12 col-sm-12 col-lg-12">
+                                        <div class="card">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <div class="image">
+                                                        <img src="assets/images/clients-avatar.png" alt="clients">
+                                                    </div>
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="info">
+                                                        <p class="text text-center">
+                                                            <i class="fa-solid fa-quote-left"></i>
+                                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                                            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                                            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                                            <i class="fa-solid fa-quote-right"></i>
+                                                        </p>
+                                                        <p class="name">-Emma Williamson</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row px-3">
+                                    <div class="col-md-12 col-sm-12 col-lg-12">
+                                        <div class="card">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <div class="image">
+                                                        <img src="assets/images/clients-avatar.png" alt="clients">
+                                                    </div>
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="info">
+                                                        <p class="text text-center">
+                                                            <i class="fa-solid fa-quote-left"></i>
+                                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+                                                            vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                                            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                                            <i class="fa-solid fa-quote-right"></i>
+                                                        </p>
+                                                        <p class="name">-Emma Williamson</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -977,6 +1055,11 @@
                 ride: true
             });
             $('#blogs-slider2').carousel({
+                interval: 2000,
+                ride: true
+            });
+            
+            $('#clients-slider').carousel({
                 interval: 2000,
                 ride: true
             });
