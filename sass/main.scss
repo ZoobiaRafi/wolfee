@@ -41,10 +41,19 @@ header {
 
     .nav-icon {
         a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            // margin-top: 20px;
+            position:relative;
+            right: -20px;
+            bottom: 0;
+            height: 20px;
+            top: 30px;
             i {
-                font-size: 24px !important;
+                font-size: 22px !important;
                 color: var(--primary);
-                margin-top: 20px;
             }
         }
     }
@@ -157,7 +166,7 @@ header {
             .heading-sm {
                 font-family: Georgia, 'Times New Roman', Times, serif;
                 color: #1E2E3E;
-                font-size: 50px;
+                font-size: 70px;
                 line-height: 1;
                 padding: 0;
                 margin: 0;
@@ -167,17 +176,15 @@ header {
                 margin: 0;
                 padding: 0;
                 color: var(--primary);
-                font-size: 100px;
+                font-size: 140px;
                 font-weight: bold;
                 font-family: Georgia, 'Times New Roman', Times, serif;
                 line-height: 1;
-
-
             }
 
             .content {
                 padding-top: 1rem;
-                font-size: 25px;
+                font-size: 35px;
                 font-family: Georgia, 'Times New Roman', Times, serif;
                 color: #1E2E3E;
                 line-height: 1;
@@ -213,17 +220,16 @@ header {
     background-position: 100% 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 6rem 0;
 
     .text {
-        padding: 82px 0 86px;
-
         p {
             margin: 0;
             padding: 0;
             font-family: 'Roboto';
             text-transform: uppercase;
             color: var(--secondary);
-            font-size: 90px;
+            font-size: 110px;
             line-height: 1;
         }
     }
@@ -243,7 +249,7 @@ header {
         .heading {
             color: var(--white);
             font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 80px;
+            font-size: 90px;
             font-weight: bolder;
             line-height: 1.25;
             padding: 0;
@@ -252,9 +258,10 @@ header {
 
         .heading-hr {
             border: 2px solid var(--gold);
+            background-color: var(--gold);
             border-radius: 5px;
             color: var(--gold);
-            width: 250px;
+            width: 350px;
             opacity: 1;
             padding: 0;
             margin: 0;
@@ -371,7 +378,7 @@ header {
         .heading {
             color: var(--primary);
             font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 80px;
+            font-size: 90px;
             line-height: 1.25;
             padding: 0;
             font-weight: bolder;
@@ -380,9 +387,10 @@ header {
 
         .heading-hr {
             border: 2px solid var(--gold);
+            background-color: var(--gold);
             border-radius: 5px;
             color: var(--gold);
-            width: 250px;
+            width: 350px;
             opacity: 1;
             padding: 0;
             margin: 0;
@@ -461,9 +469,10 @@ header {
     background-position: 0% 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 6rem 0;
 
     .text {
-        padding: 82px 0 86px;
+        // padding: 82px 0 86px;
 
         p {
             margin: 0;
@@ -492,7 +501,7 @@ header {
         .heading {
             color: #2C5362;
             font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 80px;
+            font-size: 90px;
             font-weight: bolder;
             line-height: 1.25;
             padding: 0;
@@ -501,9 +510,10 @@ header {
 
         .heading-hr {
             border: 2px solid var(--gold);
+            background-color: var(--gold);
             border-radius: 5px;
             color: var(--gold);
-            width: 250px;
+            width: 350px;
             opacity: 1;
             padding: 0;
             margin: 0;
@@ -530,6 +540,42 @@ header {
             font-family: Georgia, 'Times New Roman', Times, serif;
         }
     }
+    .c-1{
+        .image {
+            object-fit: contain;
+            overflow: hidden;
+            border-radius: 5px;
+
+            // height: 450px;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+        }
+        .info-2 {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100px;
+            background-color: #023143aa;
+            border-radius: 0 0 5px 5px;
+            transition: all 0.5s ease-in;
+            padding-top: 10px;
+            z-index: 100;
+            .text{
+                color: var(--white);
+                text-align: center;
+                font-size: 30px;
+                line-height: 1;
+                padding: 0;
+                margin: 0;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: bold;
+            }
+        }
+    }
 }
 
 .our-team {
@@ -546,7 +592,7 @@ header {
         .heading {
             color: #2C5362;
             font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 80px;
+            font-size: 90px;
             font-weight: bolder;
             line-height: 1.25;
             padding: 0;
@@ -555,9 +601,10 @@ header {
 
         .heading-hr {
             border: 2px solid var(--gold);
+            background-color: var(--gold);
             border-radius: 5px;
             color: var(--gold);
-            width: 250px;
+            width: 350px;
             opacity: 1;
             padding: 0;
             margin: 0;
@@ -733,7 +780,7 @@ header {
         .heading {
             color: var(--white);
             font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 80px;
+            font-size: 90px;
             font-weight: bolder;
             line-height: 1.25;
             padding: 0;
@@ -742,9 +789,10 @@ header {
 
         .heading-hr {
             border: 2px solid var(--gold);
+            background-color: var(--gold);
             border-radius: 5px;
             color: var(--gold);
-            width: 250px;
+            width: 350px;
             opacity: 1;
             padding: 0;
             margin: 0;
@@ -796,7 +844,7 @@ header {
                 left: 0;
                 right: 0;
                 bottom: 0;
-                height: 25%;
+                height: 30%;
                 background-color: #023143aa;
                 border-radius: 0 0 5px 5px;
                 font-family: Roboto;
@@ -885,7 +933,7 @@ header {
         .heading {
             color: #2C5362;
             font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 80px;
+            font-size: 90px;
             font-weight: bolder;
             line-height: 1.25;
             padding: 0;
@@ -894,9 +942,10 @@ header {
 
         .heading-hr {
             border: 2px solid var(--gold);
+            background-color: var(--gold);
             border-radius: 5px;
             color: var(--gold);
-            width: 250px;
+            width: 350px;
             opacity: 1;
             padding: 0;
             margin: 0;
@@ -979,7 +1028,7 @@ header {
         .heading {
             color: #2C5362;
             font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 80px;
+            font-size: 90px;
             font-weight: bolder;
             line-height: 1.25;
             padding: 0;
@@ -988,9 +1037,10 @@ header {
 
         .heading-hr {
             border: 2px solid var(--gold);
+            background-color: var(--gold);
             border-radius: 5px;
             color: var(--gold);
-            width: 250px;
+            width: 350px;
             opacity: 1;
             padding: 0;
             margin: 0;
@@ -1257,8 +1307,16 @@ footer {
 
     }
 
+    .heading-hr {
+        width: 150px!important;
+    }
+
     header {
         padding: 10px 15px;
+
+        .col-8 {
+            padding: 0!important;
+        }
 
         h1 {
             font-size: 40px;
@@ -1287,7 +1345,7 @@ footer {
 
     .banner-2 {
         .text {
-            padding: 82px 0 86px;
+            // padding: 82px 0 86px;
 
             p {
                 font-size: 50px;
@@ -1309,14 +1367,14 @@ footer {
                 margin-top: 1rem;
 
                 .image {
-                    height: 450px;
+                    height: 425px;
                 }
 
                 .info {
-                    top: 300px;
+                    top: 275px;
 
                     .text {
-                        font-size: 25px;
+                        font-size: 23px;
                     }
 
                     .button {
@@ -1329,12 +1387,13 @@ footer {
 
             .card-lg {
                 .image {
-                    height: 168px;
+                    height: 150px;
                 }
 
                 .info {
-                    top: 40px;
+                    top: 25px;
                     padding: 0rem;
+                    // padding-bottom: 1rem;
                 }
             }
 
@@ -1382,7 +1441,7 @@ footer {
 
     .banner-blue-3 {
         .text {
-            padding: 82px 0 86px;
+            // padding: 82px 0 86px;
 
             p {
                 font-size: 50px;

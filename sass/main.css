@@ -105,10 +105,20 @@ header {
   margin: 0;
   border-bottom: 1px solid rgba(112, 112, 112, 0.3882352941);
 }
+header .nav-icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  right: -20px;
+  bottom: 0;
+  height: 20px;
+  top: 30px;
+}
 header .nav-icon a i {
-  font-size: 24px !important;
+  font-size: 22px !important;
   color: var(--primary);
-  margin-top: 20px;
 }
 header .logo {
   padding: 5px;
@@ -201,7 +211,7 @@ header .nav ul li .btn-contact:hover {
 .banner .background .text .heading-sm {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #1E2E3E;
-  font-size: 50px;
+  font-size: 70px;
   line-height: 1;
   padding: 0;
   margin: 0;
@@ -210,14 +220,14 @@ header .nav ul li .btn-contact:hover {
   margin: 0;
   padding: 0;
   color: var(--primary);
-  font-size: 100px;
+  font-size: 140px;
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 1;
 }
 .banner .background .text .content {
   padding-top: 1rem;
-  font-size: 25px;
+  font-size: 35px;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #1E2E3E;
   line-height: 1;
@@ -246,9 +256,7 @@ header .nav ul li .btn-contact:hover {
   background-position: 100% 100%;
   background-size: cover;
   background-repeat: no-repeat;
-}
-.banner-2 .text {
-  padding: 82px 0 86px;
+  padding: 6rem 0;
 }
 .banner-2 .text p {
   margin: 0;
@@ -256,7 +264,7 @@ header .nav ul li .btn-contact:hover {
   font-family: "Roboto";
   text-transform: uppercase;
   color: var(--secondary);
-  font-size: 90px;
+  font-size: 110px;
   line-height: 1;
 }
 
@@ -272,7 +280,7 @@ header .nav ul li .btn-contact:hover {
 .services .head .heading {
   color: var(--white);
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 80px;
+  font-size: 90px;
   font-weight: bolder;
   line-height: 1.25;
   padding: 0;
@@ -280,9 +288,10 @@ header .nav ul li .btn-contact:hover {
 }
 .services .head .heading-hr {
   border: 2px solid var(--gold);
+  background-color: var(--gold);
   border-radius: 5px;
   color: var(--gold);
-  width: 250px;
+  width: 350px;
   opacity: 1;
   padding: 0;
   margin: 0;
@@ -371,7 +380,7 @@ header .nav ul li .btn-contact:hover {
 .about-wolfee .head .heading {
   color: var(--primary);
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 80px;
+  font-size: 90px;
   line-height: 1.25;
   padding: 0;
   font-weight: bolder;
@@ -379,9 +388,10 @@ header .nav ul li .btn-contact:hover {
 }
 .about-wolfee .head .heading-hr {
   border: 2px solid var(--gold);
+  background-color: var(--gold);
   border-radius: 5px;
   color: var(--gold);
-  width: 250px;
+  width: 350px;
   opacity: 1;
   padding: 0;
   margin: 0;
@@ -448,9 +458,7 @@ header .nav ul li .btn-contact:hover {
   background-position: 0% 100%;
   background-size: cover;
   background-repeat: no-repeat;
-}
-.banner-blue-3 .text {
-  padding: 82px 0 86px;
+  padding: 6rem 0;
 }
 .banner-blue-3 .text p {
   margin: 0;
@@ -476,7 +484,7 @@ header .nav ul li .btn-contact:hover {
 .attiq-malik .head .heading {
   color: #2C5362;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 80px;
+  font-size: 90px;
   font-weight: bolder;
   line-height: 1.25;
   padding: 0;
@@ -484,9 +492,10 @@ header .nav ul li .btn-contact:hover {
 }
 .attiq-malik .head .heading-hr {
   border: 2px solid var(--gold);
+  background-color: var(--gold);
   border-radius: 5px;
   color: var(--gold);
-  width: 250px;
+  width: 350px;
   opacity: 1;
   padding: 0;
   margin: 0;
@@ -507,6 +516,38 @@ header .nav ul li .btn-contact:hover {
   font-size: 25px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+.attiq-malik .c-1 .image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.attiq-malik .c-1 .image img {
+  height: 100%;
+  width: 100%;
+}
+.attiq-malik .c-1 .info-2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  background-color: rgba(2, 49, 67, 0.6666666667);
+  border-radius: 0 0 5px 5px;
+  transition: all 0.5s ease-in;
+  padding-top: 10px;
+  z-index: 100;
+}
+.attiq-malik .c-1 .info-2 .text {
+  color: var(--white);
+  text-align: center;
+  font-size: 30px;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
 
 .our-team {
   background-image: url(/assets/images/our-team-bg.png);
@@ -521,7 +562,7 @@ header .nav ul li .btn-contact:hover {
 .our-team .head .heading {
   color: #2C5362;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 80px;
+  font-size: 90px;
   font-weight: bolder;
   line-height: 1.25;
   padding: 0;
@@ -529,9 +570,10 @@ header .nav ul li .btn-contact:hover {
 }
 .our-team .head .heading-hr {
   border: 2px solid var(--gold);
+  background-color: var(--gold);
   border-radius: 5px;
   color: var(--gold);
-  width: 250px;
+  width: 350px;
   opacity: 1;
   padding: 0;
   margin: 0;
@@ -671,7 +713,7 @@ header .nav ul li .btn-contact:hover {
 .blogs-and-articles .head .heading {
   color: var(--white);
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 80px;
+  font-size: 90px;
   font-weight: bolder;
   line-height: 1.25;
   padding: 0;
@@ -679,9 +721,10 @@ header .nav ul li .btn-contact:hover {
 }
 .blogs-and-articles .head .heading-hr {
   border: 2px solid var(--gold);
+  background-color: var(--gold);
   border-radius: 5px;
   color: var(--gold);
-  width: 250px;
+  width: 350px;
   opacity: 1;
   padding: 0;
   margin: 0;
@@ -725,7 +768,7 @@ header .nav ul li .btn-contact:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 25%;
+  height: 30%;
   background-color: rgba(2, 49, 67, 0.6666666667);
   border-radius: 0 0 5px 5px;
   font-family: Roboto;
@@ -786,7 +829,7 @@ header .nav ul li .btn-contact:hover {
 .clients .head .heading {
   color: #2C5362;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 80px;
+  font-size: 90px;
   font-weight: bolder;
   line-height: 1.25;
   padding: 0;
@@ -794,9 +837,10 @@ header .nav ul li .btn-contact:hover {
 }
 .clients .head .heading-hr {
   border: 2px solid var(--gold);
+  background-color: var(--gold);
   border-radius: 5px;
   color: var(--gold);
-  width: 250px;
+  width: 350px;
   opacity: 1;
   padding: 0;
   margin: 0;
@@ -867,7 +911,7 @@ header .nav ul li .btn-contact:hover {
 .featured .head .heading {
   color: #2C5362;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 80px;
+  font-size: 90px;
   font-weight: bolder;
   line-height: 1.25;
   padding: 0;
@@ -875,9 +919,10 @@ header .nav ul li .btn-contact:hover {
 }
 .featured .head .heading-hr {
   border: 2px solid var(--gold);
+  background-color: var(--gold);
   border-radius: 5px;
   color: var(--gold);
-  width: 250px;
+  width: 350px;
   opacity: 1;
   padding: 0;
   margin: 0;
@@ -1098,8 +1143,14 @@ footer .rights {
   .pt-5 {
     padding-top: 1rem !important;
   }
+  .heading-hr {
+    width: 150px !important;
+  }
   header {
     padding: 10px 15px;
+  }
+  header .col-8 {
+    padding: 0 !important;
   }
   header h1 {
     font-size: 40px;
@@ -1116,9 +1167,6 @@ footer .rights {
   .banner .help .help-btn {
     font-size: 18px !important;
   }
-  .banner-2 .text {
-    padding: 82px 0 86px;
-  }
   .banner-2 .text p {
     font-size: 50px;
   }
@@ -1132,22 +1180,22 @@ footer .rights {
     margin-top: 1rem;
   }
   .services .row-cards .card .image {
-    height: 450px;
+    height: 425px;
   }
   .services .row-cards .card .info {
-    top: 300px;
+    top: 275px;
   }
   .services .row-cards .card .info .text {
-    font-size: 25px;
+    font-size: 23px;
   }
   .services .row-cards .card .info .button .btn-help {
     font-size: 20px;
   }
   .services .row-cards .card-lg .image {
-    height: 168px;
+    height: 150px;
   }
   .services .row-cards .card-lg .info {
-    top: 40px;
+    top: 25px;
     padding: 0rem;
   }
   .about-wolfee .head {
@@ -1176,9 +1224,6 @@ footer .rights {
   .about-wolfee .row-2 .info .text-lg {
     text-align: center;
     font-size: 38px;
-  }
-  .banner-blue-3 .text {
-    padding: 82px 0 86px;
   }
   .banner-blue-3 .text p {
     font-size: 50px;
